@@ -1,0 +1,33 @@
+.containerForm{
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #cfcfcf;
+    box-shadow: 0 5px 10px 7px #cfcfcf;
+    background-color: white;
+    width: 100%;
+    max-width: 900px;
+    height: 600px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap: 10px;
+}
+.groupInput{
+    display: flex;
+    flex-direction: column;
+}
+textarea{
+    min-height: 100px;
+    min-width: 100%;
+    width: 100%;
+    border: 1px solid #cfcfcf;
+    border-radius: 12px;
+}
+.GuaLib{
+    border-radius: 12px;
+    padding: 5px;
+    background: linear-gradient(to right, rgb(255, 174, 0), rgb(255, 85, 0));
+    border: none;
+    color: white;
+}
