@@ -24,17 +24,18 @@ body {
 }
 
 .form {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-input{
+input {
   border: 1px solid #cfcfcf;
   border-radius: 7px;
   padding: 4px;
 }
 
-label{
+label {
   margin: 10px 0;
 }

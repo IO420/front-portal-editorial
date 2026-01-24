@@ -1,0 +1,80 @@
+.containerForm {
+  width: 100%;
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid #cfcfcf;
+  box-shadow: 0 5px 10px 7px #cfcfcf;
+  background-color: white;
+  height: 600px;
+  margin: 20px auto;
+}
+
+.AgregarLibro {
+  text-align: center;
+  padding: 10px 0;
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+}
+
+.texto {
+  text-align: center;
+  padding: 10px 0 20px 0;
+  font-size: 16px;
+  border-bottom: 1px solid #333;
+  margin-bottom: 20px;
+}
+
+.subtitulo {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin: 20px 0 10px 0;
+}
+
+.required {
+  color: #ff5500;
+  font-size: 14px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.groupInput {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+}
+
+.groupInput label {
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #444;
+}
+
+textarea {
+  min-height: 100px;
+  min-width: 100%;
+  width: 100%;
+  border: 1px solid #cfcfcf;
+  border-radius: 8px;
+  padding: 10px 12px;
+  resize: vertical;
+}
+.GuaLib {
+  border-radius: 12px;
+  padding: 10px;
+  background: linear-gradient(to right, rgb(10, 14, 233), rgb(255, 85, 0)),
+    rgb(255, 85, 0);
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  display: block;
+}

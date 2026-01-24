@@ -1,7 +1,7 @@
-import "./CrearLibro.css";
+import './CrearLibro.css';
 export default function CrearLibro() {
   return (
-    <section className="containerForm">
+    <section className="form">
       <h1>Informacion del libro</h1>
 
       <div className="groupInput">
@@ -46,7 +46,7 @@ export default function CrearLibro() {
         <textarea rows={4}></textarea>
       </div>
       <div className="groupInput">
-        <label >GuaLib</label>
+        <label>GuaLib</label>
         <button className="GuaLib">GuardarLibro</button>
       </div>
     </section>
