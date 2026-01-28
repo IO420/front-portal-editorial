@@ -13,6 +13,8 @@ const Counter = () => {
     setNumber(number - 1);
   };
 
+  <axios className="get"></axios>;
+
   return (
     <div>
       <button onClick={restar}>Restar</button>
