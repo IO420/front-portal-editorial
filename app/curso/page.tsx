@@ -1,32 +1,50 @@
 'use client';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-
+import './fondo.css';
 export default function Page() {
   const [users, setUsers] = useState<any[]>([]);
-
   useEffect(() => {
-    const getCharacters = async () => {
+    const getUsers = async () => {
       try {
         const response = await axios.get(
-          'https://rickandmortyapi.com/api/character?page=1'
+          'https://rickandmortyapi.com/api/character?page=15'
         );
         setUsers(response.data.results);
-        console.log(response.data.results[0]);
       } catch (error) {
         console.error(error);
       }
     };
-
-    getCharacters();
+    getUsers();
   }, []);
-
   return (
     <div>
-      <h1>Hi</h1>
+      {' '}
+      <h1></h1>{' '}
+      {users.map((users) => (
+        <div className="card">
+          <img className="avatar" src={users.image} alt={users.name} />
 
-      {users.length > 0 && <p>{users[0].name}</p>}
-      <img src={users[0].image} alt="" width={500} />
+          <div className="info">
+            <h2>{users.name}</h2>
+            <p>
+              <strong>Id: </strong> {users.id}
+            </p>
+            <p>
+              <strong>Genero: </strong>
+              {users.gender}
+            </p>
+            <p>
+              <strong>Especie: </strong>
+              {users.species}
+            </p>
+            <p>
+              <strong>Estado: </strong>
+              {users.status}
+            </p>
+          </div>
+        </div>
+      ))}
     </div>
   );
 }
