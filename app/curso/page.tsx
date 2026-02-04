@@ -7,8 +7,9 @@ export default function Page() {
   useEffect(() => {
     const getUsers = async () => {
       try {
-        const response = await axios.get(
-          'https://rickandmortyapi.com/api/character?page=15'
+        const response = await axios.post(
+          'https://rickandmortyapi.com/api/character?page=15',
+          {}
         );
         setUsers(response.data.results);
       } catch (error) {
@@ -21,8 +22,8 @@ export default function Page() {
     <div>
       {' '}
       <h1></h1>{' '}
-      {users.map((users) => (
-        <div className="card">
+      {users.map((users, index) => (
+        <div className="card" key={index}>
           <img className="avatar" src={users.image} alt={users.name} />
 
           <div className="info">
